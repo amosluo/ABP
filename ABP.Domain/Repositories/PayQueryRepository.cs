@@ -12,7 +12,7 @@ namespace ABP.Domain.Repositories
 {
     public class PayQueryRepository : BaseQueryService, IPayQueryRepository
     {
-        public PayQueryRepository() : base(IocManager.Instance.Resolve<DbSessionProvider>())
+        public PayQueryRepository() : base(IocManager.Instance.Resolve<UnitOfWorkDbSessionProvider>())
         { }
 
         public IList<PayEntity> SearchPay(string keyword)

@@ -34,6 +34,9 @@
     <Reference Include="Abp, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.5.0.0\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
+    <Reference Include="Abp.Castle.Log4Net, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.Castle.Log4Net.5.0.0\lib\netstandard2.0\Abp.Castle.Log4Net.dll</HintPath>
+    </Reference>
     <Reference Include="Abp.NHibernate, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.NHibernate.5.0.0\lib\netstandard2.0\Abp.NHibernate.dll</HintPath>
     </Reference>
@@ -75,6 +78,9 @@
     </Reference>
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
@@ -227,7 +233,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ABPDomainModule.cs" />
+    <Compile Include="Db\DbSessionConfiguration.cs" />
     <Compile Include="Db\DbSessionProvider.cs" />
+    <Compile Include="Db\IDbSessionConfiguration.cs" />
+    <Compile Include="Db\UnitOfWork.cs" />
+    <Compile Include="Db\UnitOfWorkDbSessionProvider.cs" />
     <Compile Include="Entities\PayEntity.cs" />
     <Compile Include="Mappers\PayMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

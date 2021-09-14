@@ -22,7 +22,7 @@ namespace ABP.Domain.Db
             FluentConfiguration
                 // 配置连接串
                 .Database(MySQLConfiguration.Standard.ConnectionString(db =>
-                    db.Server("localhost")
+                    db.Server("192.168.3.121")
                         .Database("pay")
                         .Username("root")
                         .Password("root")

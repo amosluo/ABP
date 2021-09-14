@@ -13,7 +13,7 @@ namespace ABP.Domain.Repositories
     public class PayRepository : NhRepositoryBase<PayEntity, int>, IPayRepository
     {
         public PayRepository()
-        : base(IocManager.Instance.Resolve<DbSessionProvider>())
+        : base(IocManager.Instance.Resolve<UnitOfWorkDbSessionProvider>())
         { 
         
         }
