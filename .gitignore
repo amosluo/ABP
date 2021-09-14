@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+*.dll
 
 # Log file
 *.log
@@ -21,3 +22,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/ABP.Application/bin/Debug
+/.vs/ABP-Demo
+/ABP.Application/obj/Debug
+/ABP.Domain/bin/Debug
+/ABP.Domain/obj/Debug
+/ABP.Infrastructure/bin/Debug
+/ABP.Infrastructure/obj/Debug
+/ABP.Web/bin
+/ABP.Web/obj/Debug
+/packages
